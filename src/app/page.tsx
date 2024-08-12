@@ -65,7 +65,7 @@ export default function Home() {
   return (
   <div>
     <h1 className=" ">Welcome</h1>
-    <div className="grid grid-cols-3 gap-[25px] my-[50px]">
+    <div className="grid md:grid-cols-3 gap-[25px] my-[50px]">
       {CardData.map((cards)=>(
         <WelcomeCard 
         key={cards.id}
@@ -77,7 +77,7 @@ export default function Home() {
     </div>
     <h2 className="mb-5"> Employee Resource Portal</h2>
 
-   <div className="grid grid-cols-4 gap-[30px]">
+   <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-[30px]">
    {OverviewData.map((card) =>(
     <ResourceCards 
     key={card.id}

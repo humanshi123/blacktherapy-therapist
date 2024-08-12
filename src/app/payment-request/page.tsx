@@ -19,7 +19,7 @@ const Page = () => {
   };
   return (
     <>
-      <h1 className=" mb-[25px] lg:mb-[50px]">
+      <h1 className=" mb-[20px] md:mb-[50px]">
       Payment Requests
       </h1>
       <div className=" bg-white rounded-[10px] w-full md:p-[40px] p-5">
@@ -61,15 +61,15 @@ const Page = () => {
             </div>
           </div>
           <div className="flex flex-wrap gap-[30px] mt-[30px]">
-          <div className="md:w-[calc(20%-15px)]">
+          <div className="md:w-[calc(20%-15px)] w-[calc(50%-15px)]">
               <label className="block mb-2">Time of Services Provided</label>
               <input type="time" name="" id="" placeholder=""/>
             </div>
-            <div className="md:w-[calc(20%-15px)]">
+            <div className="md:w-[calc(20%-15px)] w-[calc(50%-15px)]">
               <label className="block mb-2">Duration (Hours)</label>
               <input type="time" name="" id="" placeholder=""/>
             </div>
-            <div className="md:w-[calc(60%-30px)]">
+            <div className="md:w-[calc(60%-30px)] w-full">
               <label className="block mb-2">Progress Notes and/or Assessments Submitted & Approved?</label>
               <select name="assignedClinician" value="" className="">
                 <option value="">--Select--</option>

@@ -36,8 +36,8 @@ const Page = () => {
 
   return (
     <div className="">
-        <h1 className='mb-[50px]'>Assignmets</h1>
-      <div className="flex mb-[30px] gap-5">
+        <h1 className=' mb-[20px] md:mb-[50px]'>Assignmets</h1>
+      <div className="grid md:flex mb-[30px] gap-3 md:gap-5">
         <button className={`h-[46px] py-3 px-4 text-sm rounded-[5px] border border-[#283c63] ${activeTab === 'peerSupport' ? 'active bg-[#283c63] !text-white' : ''} text-[#26395e]`}
          onClick={() => handleTabClick('peerSupport')}>
           Peer Support Assignments
@@ -61,7 +61,7 @@ const Page = () => {
             <th>Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody> 
           {filteredData.map((item) => (
             <tr key={item.id}>
               <td>{item.client}</td>

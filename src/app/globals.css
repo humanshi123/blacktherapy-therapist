@@ -265,8 +265,28 @@ select {
   -webkit-appearance: none;
   background-position: 96%;
 }
-
-
+ .custom-checkbox input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-checkbox label {
+  width: 44px;
+  height: 44px;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #283C63;
+  display: grid;
+  place-items: center;
+}
+.custom-checkbox input:checked ~ label {
+  background: #283C63;
+  color: #FFF;
+}
 @media screen and (max-width: 1023px) {
   h2 {
     font-size: 26px;
@@ -286,4 +306,12 @@ select {
   .add-clinician div {
     width: 100%;
   }
+  h1 {
+    font-size: 30px;
+  }
+  .profile-form div {
+    width: 100%;
+  }
+
+
 }
